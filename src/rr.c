@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
+#include <unistd.h>
 
 #define QUANTUM 3   // Execution time per process
 
@@ -96,8 +97,6 @@ void execute(Process **array) {
                 current = current->next;
             } 
         } else {
-            printf("Executing process %s...", current->name);
-            printf(" Finished!\n");
             // Remove process from list
             if (current == (*array)) {
                 (*array) = current->next;
@@ -124,10 +123,12 @@ void execute(Process **array) {
                 }
             }
         }
+        print_array(*array);
+        printf("Executing...\n");
+        sleep(1);
     }
 
     printf("Execution finished!\n");
-    print_array(*array);
 }
 
 
@@ -141,19 +142,12 @@ void main() {
         switch (main_layout()) {
         case 1:
             system("clear");
-            printf("+==============================+\n");/*
+            printf("+==============================+\n");
             printf("Process Name: ");
             scanf(" %[^\n]", name);
             printf("Execution Time: ");
             scanf("%d", &time);
-            insert(&array, name, time);*/
-            insert(&array, "Process 5", 4);
-            insert(&array, "Process 8", 2);
-            insert(&array, "Process 2", 9);
-            insert(&array, "Process 4", 4);
-            insert(&array, "Process 0", 9);
-            insert(&array, "Process 2", 3);
-            insert(&array, "Process 5", 5);
+            insert(&array, name, time);
             break;
 
         case 2:
@@ -162,6 +156,17 @@ void main() {
 
         case 3:
             execute(&array);
+            break;
+        case 4:
+            system("clear");
+            printf("+==============================+\n");
+            insert(&array, "Process 1", 4);
+            insert(&array, "Process 2", 2);
+            insert(&array, "Process 3", 9);
+            insert(&array, "Process 4", 4);
+            insert(&array, "Process 5", 9);
+            insert(&array, "Process 6", 3);
+            insert(&array, "Process 7", 5);
             break;
 
         default:
