@@ -3,7 +3,7 @@
 ![Linguagem](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
 ![Contribuidores](https://img.shields.io/badge/Contributors-4-purple?style=flat-square)
 ![Tipo](https://img.shields.io/badge/Sistemas-Operacionais-orange?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Concluído-green?style=flat-square)
 ![Licença](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
 Este repositório contém a implementação prática de algoritmos de escalonamento de CPU, desenvolvidos em **C** para a disciplina de Sistemas Operacionais. O objetivo é simular como o processador decide qual processo deve ser executado em um ambiente multitarefa.
@@ -79,15 +79,15 @@ Para rodar qualquer um dos escalonadores, você precisará de um compilador C (c
       </a>
     </td>
     <td align="center" valign="top">
-      <a href="URL_DO_PERFIL_COLEGA_2">
-        <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/ID_COLEGA_2?v=4&w=100&h=100&fit=cover&mask=circle" width="100px;" alt="Dev 2"/>
+      <a href="">
+        <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/ID_AQUI?v=4&w=100&h=100&fit=cover&mask=circle" width="100px;" alt="Dev 2"/>
         <br />
         <sub><b>Rubens Ian</b></sub>
       </a>
     </td>
     <td align="center" valign="top">
-      <a href="URL_DO_PERFIL_COLEGA_3">
-        <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/ID_COLEGA_3?v=4&w=100&h=100&fit=cover&mask=circle" width="100px;" alt="Dev 3"/>
+      <a href="">
+        <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/ID_AQUI?v=4&w=100&h=100&fit=cover&mask=circle" width="100px;" alt="Dev 3"/>
         <br />
         <sub><b>Pedro Porto</b></sub>
       </a>
