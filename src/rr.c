@@ -1,3 +1,6 @@
+// Author: Andreas Gunther Matos Leal
+// Team: Andreas, Pedro, Rubens e Thaylon
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -33,7 +36,10 @@ int main_layout() {
 
 Process* alloc() {
     Process *temp = (Process*)malloc(sizeof(Process));
-    if (temp == NULL) printf("Allocation error");
+    if (temp == NULL) {
+        printf("Allocation error");
+        exit(1);
+    }
     temp->next = NULL;
     return temp;
 }
